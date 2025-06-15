@@ -1,4 +1,5 @@
 import './App.css'
+import From from './Components/From/From'
 
 function App() {
   
@@ -6,8 +7,8 @@ function App() {
   return (
     <>
      
-      <h1>Vite + React</h1>
-      
+      <h3 className='text-3xl text-center'>welcome to the show </h3>
+      <From></From>
       
     </>
   )
