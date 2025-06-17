@@ -3,10 +3,19 @@ import { useState } from "react";
 const From2 = () => {
     const handleSubmit=(e)=>{
          e.preventDefault()
-        console.log("Murogbi hmm hmm ")
-        console.log(name,email,phone)
+        
+        if(phone.length <11){
+            setError("Your phone number must be 11 digit")
+            console.log("Phone length",phone.length)
+
+        }else{
+            console.log("Murogbi hmm hmm ")
+            console.log(name,email,phone)
+
+        }
 
     }
+    const[error,setError]=useState("")
     // state for name 
     const [name,setName]=useState("MY name is Raj")
     const handleChangeName=e=>{
@@ -41,6 +50,9 @@ const From2 = () => {
                 
                 </div>
                 <input   className="border border-s-black p-2 text-center" type="submit" value="submitted" />
+                {
+                    error && <p>{error}</p>
+                }
                 
             </form>
             
