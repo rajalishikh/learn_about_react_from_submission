@@ -1,5 +1,5 @@
 import './App.css'
-import From from './Components/From/From'
+import From2 from './Components/From/From2/From2'
 
 function App() {
   
@@ -8,7 +8,8 @@ function App() {
     <>
      
       <h3 className='text-3xl text-center'>welcome to the show </h3>
-      <From></From>
+      {/* <From></From> */}
+      <From2></From2>
       
     </>
   )
