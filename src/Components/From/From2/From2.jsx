@@ -32,15 +32,15 @@ const From2 = () => {
         <div>
            <form className="text-center" onSubmit={handleSubmit} >
                 <div>
-                    <input onChange={handleChangeName} className="border border-s-black p-2 mb-2" type="text"  name="name" placeholder='write your name' />
+                    <input value={name} onChange={handleChangeName} className="border border-s-black p-2 mb-2" type="text"  name="name" placeholder='write your name' />
                 <br />
-                <input onChange={handleEmailChange} className="border border-s-black p-2 mb-2" type="email" name="email" id="" placeholder='Write your email'/>
+                <input value={email} onChange={handleEmailChange} className="border border-s-black p-2 mb-2" type="email" name="email" id="" placeholder='Write your email' required />
                 <br />
-                <input onChange={handlePhoneChange} className="border border-s-black p-2 mb-4" type="text" name="phone" placeholder='write your phone number' />
+                <input value={phone} onChange={handlePhoneChange} className="border border-s-black p-2 mb-4" type="text" name="phone" placeholder='write your phone number' required />
                 <br />
                 
                 </div>
-                <input  className="border border-s-black p-2 text-center" type="submit" value="submitted" />
+                <input   className="border border-s-black p-2 text-center" type="submit" value="submitted" />
                 
             </form>
             
