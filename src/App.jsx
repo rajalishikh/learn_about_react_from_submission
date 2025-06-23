@@ -1,5 +1,5 @@
 import './App.css'
-import From2 from './Components/From/From2/From2'
+import Learnref from './Components/Learnref/learnref'
 
 function App() {
   
@@ -9,7 +9,8 @@ function App() {
      
       <h3 className='text-3xl text-center'>welcome to the show </h3>
       {/* <From></From> */}
-      <From2></From2>
+      {/* <From2></From2> */}
+      <Learnref></Learnref>
       
     </>
   )
