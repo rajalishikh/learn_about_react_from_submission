@@ -1,5 +1,5 @@
 import './App.css'
-import Learnref from './Components/Learnref/learnref'
+import Simple from './Components/Simplecomponent/Simple'
 
 function App() {
   
@@ -10,7 +10,8 @@ function App() {
       <h3 className='text-3xl text-center'>welcome to the show </h3>
       {/* <From></From> */}
       {/* <From2></From2> */}
-      <Learnref></Learnref>
+      {/* <Learnref></Learnref> */}
+      <Simple></Simple>
       
     </>
   )
