@@ -1,17 +1,24 @@
 import './App.css'
-import Simple from './Components/Simplecomponent/Simple'
+import Reusable from './Components/Reusable/Reusable'
 
 function App() {
+  const handleClick=(e)=>{
+    console.log(e)
+
+  }
   
 
   return (
     <>
      
-      <h3 className='text-3xl text-center'>welcome to the show </h3>
+      
       {/* <From></From> */}
       {/* <From2></From2> */}
       {/* <Learnref></Learnref> */}
-      <Simple></Simple>
+      {/* <Simple></Simple> */}
+      <Reusable TittleLogin={"Please give me your login information if you are a student "}></Reusable>
+      <Reusable TittleLogin={"Please give me your login information If you are Teacher"}></Reusable>
+      
       
     </>
   )
