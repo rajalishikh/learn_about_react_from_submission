@@ -1,5 +1,6 @@
 
 const Reusable = ({TittleLogin,handleSubmit}) => {
+    // Reusable function  
     const handleLogin=e=>{
         e.preventDefault();
         const data={
@@ -9,6 +10,7 @@ const Reusable = ({TittleLogin,handleSubmit}) => {
         }
         handleSubmit(data)
     }
+    // Reusable component 
     return (
         <div>
             <h2 className="text-center">{TittleLogin}</h2>

@@ -1,5 +1,5 @@
 import './App.css'
-import Reusable from './Components/Reusable/Reusable'
+import Dada from './Components/Family/Dada/Dada'
 
 function App() {
   const handleClick=(e)=>{
@@ -16,18 +16,23 @@ function App() {
   
 
   return (
-    <>
+    <div className='flex flex-col justify-center items-center min-h-screen'>
      
       
       {/* <From></From> */}
       {/* <From2></From2> */}
       {/* <Learnref></Learnref> */}
       {/* <Simple></Simple> */}
-      <Reusable handleSubmit={handleStudentLogin} TittleLogin={"Please give me your login information if you are a student "}></Reusable>
-      <Reusable handleSubmit={handleTeacherLogin} TittleLogin={"Please give me your login information If you are Teacher"}></Reusable>
+      {/* <Reusable handleSubmit={handleStudentLogin} TittleLogin={"Please give me your login information if you are a student "}></Reusable>
+      <Reusable handleSubmit={handleTeacherLogin} TittleLogin={"Please give me your login information If you are Teacher"}></Reusable> */}
+      <div>
+        <Dada></Dada>
+
+      </div>
       
       
-    </>
+      
+    </div>
   )
 }
 
