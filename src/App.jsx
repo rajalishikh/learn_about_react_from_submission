@@ -6,6 +6,13 @@ function App() {
     console.log(e)
 
   }
+  const handleStudentLogin=(e)=>{
+    console.log("Student login",e)
+
+  }
+  const handleTeacherLogin=(e)=>{
+
+  }
   
 
   return (
@@ -16,8 +23,8 @@ function App() {
       {/* <From2></From2> */}
       {/* <Learnref></Learnref> */}
       {/* <Simple></Simple> */}
-      <Reusable TittleLogin={"Please give me your login information if you are a student "}></Reusable>
-      <Reusable TittleLogin={"Please give me your login information If you are Teacher"}></Reusable>
+      <Reusable handleSubmit={handleStudentLogin} TittleLogin={"Please give me your login information if you are a student "}></Reusable>
+      <Reusable handleSubmit={handleTeacherLogin} TittleLogin={"Please give me your login information If you are Teacher"}></Reusable>
       
       
     </>
